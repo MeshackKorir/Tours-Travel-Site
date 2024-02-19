@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+
+
+<form [formGroup]="registerUserForm" (ngSubmit) = "onSubmit()">
+  <div class="parent-wrapper">
+    <div class="wrapper">
+      <form data-cy="login-form">
+        <h2>Login</h2>
+        <div class="input-field">
+          <input data-cy="email" type="text" formControlName="email" name="email" required>
+          <label>Enter your email</label>
+        </div>
+        <div class="input-field">
+          <input data-cy="password" type="password" formControlName="password" name="password" required>
+          <label>Enter your password</label>
+        </div>
+        <div class="forget">
+          <label for="remember">
+            <input type="checkbox" id="remember">
+            <p style="color: black;">Remember me</p>
+          </label>
+          <a href="#" style="color: black;">Forgot password?</a>
+        </div>
+        
+        <button type="submit">Log In</button>
+        <div class="register">
+          <p style="color: black; gap: 10px;">Don't have an account? <a routerLink="/register" style="font: 20px;">Register</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</form>
+
+
+<!-- <app-footer></app-footer> -->

@@ -1,0 +1,188 @@
+<app-navbar></app-navbar>
+
+    <body>
+        <section class="banner">
+            <div class="banner-text-item">
+                <div class="banner-heading">
+                    <h1>Find your Next tour!</h1>
+                </div>
+                <form class="form">
+                    <input type="text" list="mylist" placeholder="Where would you like to go?">
+                    <datalist id="mylist">
+                        <option>Mombasa</option>
+                        <option>Maasai Mara National Reserve</option>
+                        <option>Amboseli</option>
+                        <option>Diani Beach</option>
+                        <option>Malindi</option>
+                        <option>Nairobi National Park</option>
+                        <option>Ngong Hills</option>
+                    </datalist>
+                    <input type="date" class="date">
+                    <button type="button" (click)="navigateToRegister()" class="booking-button">Book</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="service-item">
+                <img src="https://cdn.pixabay.com/photo/2019/06/01/22/41/river-4245261_960_720.jpg" style="height: 25vh;">
+                <h2>8000+ Our Local Guides</h2>
+            </div>
+            <div class="service-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUT7L_-ehbZkOzh5esy4qv4aLU_pdDQOJi2w&usqp=CAU" style="height: 25vh;">
+                <h2>100% Trusted Tour Agency</h2>
+            </div>
+            <div class="service-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjt1VEgulVkl-c8d_g62VPWiZg-DKrnqcBbA&usqp=CAU" style="height: 25vh;">
+                <h2>28+ Years of Travel Experience</h2>
+            </div>
+            <div class="service-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmL3a7uxuUZTC2n-myX2r7cT_nt67GEPeujg&usqp=CAU" style="height: 25vh;">
+                <h2>98% Our Travelers are Happy</h2>
+            </div>
+        </section>
+
+        <section class="places">
+            <div class="places-text">
+                <small>FEATURED TOURS PACKAGES</small>
+                <h2>Favourite Places</h2>
+                <div style=" padding: 6px; margin: 10px;  border-radius: 10px; margin-left: 50px;">
+                    <input type="text" placeholder="Search your destination ">
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRihzVF8PP3P8tpxhjh_gWLLh3Royee-avxWfCuUGxVQ9vjnHrIynLRig-1ATwzy_-n8Qs&usqp=CAU">
+                        </div>
+                    </div>
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2 style="font-size: larger; color: black;">The Dark Forest Adventure</h2>
+                        <p class="cost">$4500 / Per Person</p>
+                        <div class="card-box">
+                            <p class="time" style="color: black;">🕓 5 Days</p>
+                            <p class="location" style="color: black;">✈, Mombasa</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtCl31r5WQgOjm5jKdCHK_h-t8tnsDrpozRapz_azm8OBdbIpvGnWB4eAxzrN5ZQeJL-w&usqp=CAU">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2 style="font-size: larger; color: black;">The Dark Forest Adventure</h2>
+                        <p class="cost">$1870 / Per Person</p>
+                        <div class="card-box">
+                            <p class="time" style="color: black;">🕓 3 Days</p>
+                            <p class="location" style="color: black;">✈, Nairobi</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width: 70vw;">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2 style="font-size: larger; color: black;">The Dark Forest Adventure</h2>
+                        <p class="cost">$870 / Per Person</p>
+                        <div class="card-box">
+                            <p class="time" style="color: black;">🕓 1 Day</p>
+                            <p class="location" style="color: black;">✈, Eldoret</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img
+                                src="https://img.freepik.com/free-photo/beautiful-girl-standing-boat-looking-mountains-ratchaprapha-dam-khao-sok-national-park-surat-thani-province-thailand_335224-846.jpg">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>The Dark Forest Adventure</h2>
+                        <p class="cost">$1700 / Per Person</p>
+                        <div class="card-box">
+                            <p class="time" style="color: black;">🕓 2 Days</p>
+                            <p class="location" style="color: black;">✈, Kitale</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img src="https://images.unsplash.com/photo-1433838552652-f9a46b332c40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>The Dark Forest Adventure</h2>
+                        <p class="cost">$7000 / Per Person</p>
+                        <div class="card-box">
+                            <p class="time" style="color: black;">🕓 4 Days</p>
+                            <p class="location" style="color: black;">✈, Nakuru</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAuiE3vF-Ccqjxpx6SUoZZSfLUWRqr43BKIg&usqp=CAU">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>The Dark Forest Adventure</h2>
+                        <p class="cost">$10000 / Per Person</p>
+                        <div class="card-box">
+                            <p class="time" style="color: black;">🕓 7 Days</p>
+                            <p class="location" style="color: black;">✈, Naivasha</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHCwVvgwmF_OFDa4lFTvm2x2DcjME2CA-cbiNQxnOp6wX8OUT7kw8Rj4K3wgaBJYlpTrU&usqp=CAU">
+            </div>
+            <div class="about-text">
+                <small>ABOUT OUR COMPANY</small>
+                <h2>We are Go Trip Ravels Support Company</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud</p>
+
+                <label><input type="checkbox" checked>Lorem ipsum dolor sit amet</label>
+                <label><input type="checkbox" checked>consectetur adipisicing elit</label>
+                <label><input type="checkbox" checked>Architecto atque consequuntur</label>
+                <label><input type="checkbox" checked>cupiditate doloremque ducimus</label>
+                <a href="#">ABOUT US</a>
+            </div>
+        </section>
+
+        <app-footer></app-footer>
+    </body>
+

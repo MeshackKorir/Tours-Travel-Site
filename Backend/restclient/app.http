@@ -1,0 +1,19 @@
+### Register
+POST http://localhost:5000/users/register/ 
+Content-Type: application/json
+
+{
+"username": "Maxwell korir", 
+"email": "kevin@gmail.com", 
+"password": "1097956789@Mn"
+}
+
+### login
+ POST http://localhost:5000/users/login
+  Content-Type: application/json
+
+{
+
+    "email": "mesh@gmail.com",
+    "password": "$2b$08$J9Dxuwyt4Hd1xf/S8zlPvuHiSOKuQhTzZUFkTY8AT1t186xw0FvX."
+}

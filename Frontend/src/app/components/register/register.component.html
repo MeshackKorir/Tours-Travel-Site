@@ -1,0 +1,28 @@
+<!-- <app-navbar></app-navbar> -->
+
+
+<body>
+    <div class="wrapper">
+      <form [formGroup]="loginFromSubmit" (ngSubmit)="registerUser()" class="capture" style="justify-content: center;">
+        <h2>Register</h2>
+        <!-- <div class="input-field">
+            <input type="text" formControlName="username" required>
+            <label class="input">Enter your Name</label>
+          </div> -->
+        <div class="input-field">
+          <input type="text" formControlName="email" required>
+          <label>Enter your email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" formControlName="password" required>
+          <label>Enter your password</label>
+          <div *ngIf="loginFromSubmit.get('password')?.invalid && loginFromSubmit.get('password')?.touched" class="text-sm text-red-500 mt-[3px]">Password is required</div>
+          <div *ngIf="loginFromSubmit.get('password')?.invalid && loginFromSubmit.get('password')?.touched && !loginFromSubmit.get('password')?.dirty" class="text-sm text-red-500 mt-[3px]">Must have letters </div>
+        </div>
+        <button type="submit">Register</button>
+        <div class="register">
+          <p>Aready have an Account?<a routerLink="/login">Login</a></p>
+        </div>
+      </form>
+    </div>
+  </body>
